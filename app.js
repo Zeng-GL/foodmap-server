@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const config = require("config");
 const dbConfig = config.get("bcgreenhope.dbConfig.dbName");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 // Import Routes
 const postsRoute = require("./routes/posts");
@@ -10,6 +11,7 @@ const restRoute = require("./routes/restaurant");
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 // middleware(進到routes之前要執行的一層function，例如auth)
 app.use("/api/posts", postsRoute);
