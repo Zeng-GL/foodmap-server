@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 });
 
 // connect to DB
+// 
 mongoose
   .connect(dbConfig)
   .then(() => {
