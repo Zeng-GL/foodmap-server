@@ -1,0 +1,9 @@
+{
+  "bcgreenhope": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5984,
+      "dbName": "mongodb+srv://bcgreenhope:22Z4Y21pNsYUguRt@cluster0.esfvo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    }
+  }
+}
