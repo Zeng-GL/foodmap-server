@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
 router.patch("/:restId",async(req,res)=>{
   try{
     const editedRest = await Restaurant.updateOne(
-      {_id:req.params.restId},
+      { _id:req.params.restId },
       {
         $set:{
           name: req.body.name,
